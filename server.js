@@ -17,6 +17,11 @@ app.get("./about", (request, response) => {
   response.sendFile(path.join(__dirname, "public", "about.html"));
 });
 
+// route for 404 not found
+app.use((request, response) => {
+  response.sendFile(path.join(__dirname, "Public", "not-found.html"));
+});
+
 //Start the server
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}/`);
