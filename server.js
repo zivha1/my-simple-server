@@ -13,7 +13,7 @@ app.get("/", (request, response) => {
 });
 
 //route for the about page
-app.get("/about", (request, response) => {
+app.get("./about", (request, response) => {
   response.sendFile(path.join(__dirname, "public", "about.html"));
 });
 
