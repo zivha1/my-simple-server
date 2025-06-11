@@ -36,6 +36,8 @@ button:hover {
   background-color: rgb(255, 224, 229, 0.8);
   transition: all;
 }
-
-.background-404 {
+p {
+  color: pink;
+  font-weight: bold;
+  font-size: 24px;
 }
